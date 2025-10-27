@@ -95,6 +95,18 @@ export const translations = {
       "도시에서 벗어난 멋진 휴식처예요! 가족이 운영하는 농장은 진정성 있고 환영받는 느낌이에요. 대추는 맛있고 풍경은 아름다워요.",
     testimonial3Name: "제니퍼 박",
     testimonial3Location: "오렌지 카운티, CA",
+    testimonial4:
+      "아이들이 정말 좋아했어요! 직접 과일을 따는 경험은 교육적이고 재미있었습니다. 농장 주인분들이 정말 친절하고 지식이 풍부해요.",
+    testimonial4Name: "데이비드 리",
+    testimonial4Location: "어바인, CA",
+    testimonial5:
+      "건조 대추가 환상적이에요! 우리 레스토랑에서 디저트에 사용하는데 손님들이 정말 좋아합니다. 품질이 일관되고 맛이 뛰어나요.",
+    testimonial5Name: "소피아 로드리게스",
+    testimonial5Location: "샌프란시스코, CA",
+    testimonial6:
+      "매년 방문하는 우리 가족의 전통이 되었어요! 계절마다 농장이 아름답고, 대추는 항상 완벽합니다. 진정한 보석 같은 곳이에요.",
+    testimonial6Name: "에밀리 왕",
+    testimonial6Location: "패서디나, CA",
 
     // Footer
     footerTagline: "행복을 키우는 농장, 한 알의 대추씩",
@@ -197,6 +209,18 @@ export const translations = {
       "A wonderful getaway from the city! The family-run operation is authentic and welcoming. The jujubes are delicious and the scenery is beautiful.",
     testimonial3Name: "Jennifer Park",
     testimonial3Location: "Orange County, CA",
+    testimonial4:
+      "Our kids absolutely loved it! The hands-on experience of picking fruit was both educational and fun. The farm owners are so kind and knowledgeable.",
+    testimonial4Name: "David Lee",
+    testimonial4Location: "Irvine, CA",
+    testimonial5:
+      "The dried jujubes are fantastic! We use them in our restaurant for desserts and our customers love them. Consistent quality and amazing flavor.",
+    testimonial5Name: "Sophia Rodriguez",
+    testimonial5Location: "San Francisco, CA",
+    testimonial6:
+      "This has become our family tradition every year! The ranch is beautiful in every season, and the jujubes are always perfect. A true gem.",
+    testimonial6Name: "Emily Wang",
+    testimonial6Location: "Pasadena, CA",
 
     // Footer
     footerTagline: "Growing happiness, one jujube at a time",
