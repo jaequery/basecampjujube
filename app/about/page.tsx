@@ -5,10 +5,15 @@ import Image from "next/image"
 import { Heart } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function AboutPage() {
   const { language, setLanguage } = useLanguage()
   const t = translations[language]
+
+  const section1Animation = useScrollAnimation()
+  const section2Animation = useScrollAnimation()
+  const section3Animation = useScrollAnimation()
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FFF8F0] to-white">
@@ -26,7 +31,12 @@ export default function AboutPage() {
 
       {/* Story Sections */}
       <section className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div
+          ref={section1Animation.ref}
+          className={`grid md:grid-cols-2 gap-12 items-center mb-20 transition-all duration-1000 ${
+            section1Animation.isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+          }`}
+        >
           <div className="relative h-[400px] rounded-3xl overflow-hidden">
             <Image
               src="/korean-family-working-in-jujube-orchard-with-deser.jpg"
@@ -41,7 +51,12 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+        <div
+          ref={section2Animation.ref}
+          className={`grid md:grid-cols-2 gap-12 items-center mb-20 transition-all duration-1000 ${
+            section2Animation.isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+          }`}
+        >
           <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-[#8B4513] mb-4">{t.ourStorySection2Title}</h2>
             <p className="text-gray-700 leading-relaxed text-lg">{t.ourStorySection2Text}</p>
@@ -56,7 +71,12 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div
+          ref={section3Animation.ref}
+          className={`grid md:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
+            section3Animation.isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+          }`}
+        >
           <div className="relative h-[400px] rounded-3xl overflow-hidden">
             <Image
               src="/jujube-orchard-with-desert-mountains-and-clear-blu.jpg"

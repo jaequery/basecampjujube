@@ -7,10 +7,15 @@ import { Heart, Facebook, Twitter } from "lucide-react"
 import { useLanguage } from "@/lib/use-language"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function Home() {
   const { language, setLanguage } = useLanguage()
   const t = translations[language]
+
+  const photoMenuAnimation = useScrollAnimation()
+  const galleryAnimation = useScrollAnimation()
+  const testimonialsAnimation = useScrollAnimation()
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -54,7 +59,12 @@ export default function Home() {
         </a>
       </div>
 
-      <section className="py-16 px-6 bg-secondary/30">
+      <section
+        ref={photoMenuAnimation.ref}
+        className={`py-16 px-6 bg-secondary/30 transition-all duration-1000 ${
+          photoMenuAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-8">
             <Link
@@ -102,7 +112,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-background">
+      <section
+        ref={galleryAnimation.ref}
+        className={`py-20 px-6 bg-background transition-all duration-1000 ${
+          galleryAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">{t.galleryTitle}</h2>
@@ -224,7 +239,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-secondary/30">
+      <section
+        ref={testimonialsAnimation.ref}
+        className={`py-20 px-6 bg-secondary/30 transition-all duration-1000 ${
+          testimonialsAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">{t.testimonialsTitle}</h2>

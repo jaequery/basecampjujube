@@ -5,10 +5,15 @@ import Image from "next/image"
 import { Check, Mail, Phone } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function WholesalePage() {
   const { language, setLanguage } = useLanguage()
   const t = translations[language]
+
+  const productsAnimation = useScrollAnimation()
+  const benefitsAnimation = useScrollAnimation()
+  const contactAnimation = useScrollAnimation()
 
   const benefits = [
     t.wholesaleBenefit1,
@@ -34,7 +39,12 @@ export default function WholesalePage() {
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.wholesaleProductsTitle}</h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+        <div
+          ref={productsAnimation.ref}
+          className={`grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20 transition-all duration-1000 ${
+            productsAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] overflow-hidden hover:border-[#DC143C] transition-colors">
             <div className="relative h-[300px]">
               <Image
@@ -67,7 +77,12 @@ export default function WholesalePage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.wholesaleBenefitsTitle}</h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div
+            ref={benefitsAnimation.ref}
+            className={`grid md:grid-cols-2 gap-6 mb-16 transition-all duration-1000 ${
+              benefitsAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-start gap-4 bg-white p-6 rounded-2xl border-2 border-[#FFE4D6]">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#DC143C] flex items-center justify-center">
@@ -80,8 +95,12 @@ export default function WholesalePage() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section
+        ref={contactAnimation.ref}
+        className={`container mx-auto px-4 py-16 transition-all duration-1000 ${
+          contactAnimation.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        }`}
+      >
         <div className="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold text-[#8B4513] mb-6">{t.wholesaleContactTitle}</h2>
           <p className="text-lg text-gray-700 mb-8">{t.wholesaleContactText}</p>

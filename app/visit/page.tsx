@@ -6,10 +6,15 @@ import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 export default function VisitPage() {
   const { language, setLanguage } = useLanguage()
   const t = translations[language]
+
+  const experienceAnimation = useScrollAnimation()
+  const detailsAnimation = useScrollAnimation()
+  const galleryAnimation = useScrollAnimation()
 
   const experiences = [
     t.visitExperience1,
@@ -44,7 +49,12 @@ export default function VisitPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.visitExperienceTitle}</h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div
+            ref={experienceAnimation.ref}
+            className={`grid md:grid-cols-2 gap-6 mb-16 transition-all duration-1000 ${
+              experienceAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
             {experiences.map((experience, index) => (
               <div
                 key={index}
@@ -58,8 +68,12 @@ export default function VisitPage() {
             ))}
           </div>
 
-          {/* Visit Details */}
-          <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 md:p-12">
+          <div
+            ref={detailsAnimation.ref}
+            className={`bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 md:p-12 transition-all duration-1000 ${
+              detailsAnimation.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            }`}
+          >
             <h3 className="text-3xl font-bold text-[#8B4513] mb-8 text-center">{t.visitDetailsTitle}</h3>
 
             <div className="space-y-4 mb-8">
@@ -97,8 +111,12 @@ export default function VisitPage() {
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="container mx-auto px-4 py-16">
+      <section
+        ref={galleryAnimation.ref}
+        className={`container mx-auto px-4 py-16 transition-all duration-1000 ${
+          galleryAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
         <div className="grid md:grid-cols-3 gap-6">
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
             <Image
