@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Basecamp Jujube Ranch | Organic Jujubes in Lucerne Valley, California",
   description:
     "Premium organic jujubes from Basecamp Jujube Ranch in Lucerne Valley, California. Visit our ranch for a unique farm experience.",
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -25,13 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V1GDYKTDRP" strategy="afterInteractive" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-GX11XRL3Z7" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-V1GDYKTDRP');
+            gtag('config', 'G-GX11XRL3Z7');
           `}
         </Script>
       </head>
