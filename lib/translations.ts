@@ -80,7 +80,7 @@ export const translations = {
     wholesalePhone: "전화: (213) 576-9133",
 
     // Hero Section
-    heroTitle: "베이스캠프 대추 농장",
+    heroTitle: "베이스캠프 대추농장",
     heroSubtitle: "가족이 사랑으로 키운",
     heroDescription: "캘리포니아의 햇살 가득한 농장에서 자란 달콤하고 유기농 대추",
     bookVisit: "방문 예약하기",
