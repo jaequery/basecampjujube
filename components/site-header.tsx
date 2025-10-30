@@ -41,6 +41,9 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
               >
                 {t.navBuyWholesale}
               </Link>
+              <Link href="/articles" className="text-foreground font-medium hover:text-accent transition-colors text-base">
+                {t.navArticles}
+              </Link>
             </div>
           </div>
 
@@ -70,6 +73,9 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
                 className="text-foreground font-medium hover:text-accent transition-colors text-lg"
               >
                 {t.navBuyWholesale}
+              </Link>
+              <Link href="/articles" className="text-foreground font-medium hover:text-accent transition-colors text-lg">
+                {t.navArticles}
               </Link>
             </div>
 

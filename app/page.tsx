@@ -50,7 +50,7 @@ export default function Home() {
         </p>
 
         <a
-          href="https://cal.com/jujufarm/farm-visit?overlayCalendar=true"
+          href="https://cal.com/basecampjujube/farm-visit?overlayCalendar=true"
           target="_blank"
           rel="noopener noreferrer"
           className="animate-fade-in-up"

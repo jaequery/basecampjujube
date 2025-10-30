@@ -4,6 +4,7 @@ export const translations = {
     navOurStory: "우리 이야기",
     navVisit: "방문하기",
     navBuyWholesale: "도매 구매",
+    navArticles: "농장 이야기",
     visit: "방문하기",
     purchase: "구매하기",
 
@@ -132,6 +133,7 @@ export const translations = {
     navOurStory: "Our Story",
     navVisit: "Visit",
     navBuyWholesale: "Buy Wholesale",
+    navArticles: "Articles",
     visit: "Visit",
     purchase: "Purchase",
 
