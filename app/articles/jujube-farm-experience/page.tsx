@@ -64,11 +64,11 @@ export default function JujubeFarmExperiencePage() {
 
           <div className="aspect-video rounded-2xl overflow-hidden mb-12 shadow-xl">
             <img
-              src="/gallery/walking-through-orchard.webp"
+              src="/photos/IMG_2124.JPG"
               alt={
                 language === "ko"
-                  ? "방문객들이 대추 과수원을 걷고 있는 모습"
-                  : "Visitors walking through jujube orchard"
+                  ? "베이스캠프 대추 농장의 아름다운 전경"
+                  : "Beautiful panoramic view of Basecamp Jujube Ranch"
               }
               className="w-full h-full object-cover"
             />
@@ -106,8 +106,8 @@ export default function JujubeFarmExperiencePage() {
 
                 <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="/gallery/picking-from-tree.webp"
-                    alt="나무에서 대추를 따는 모습"
+                    src="/photos/IMG_1080.JPG"
+                    alt="전통 방식으로 대추를 건조하는 모습"
                     className="w-full h-auto"
                   />
                 </div>

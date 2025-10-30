@@ -64,11 +64,11 @@ export default function HealthBenefitsJujubePage() {
 
           <div className="aspect-video rounded-2xl overflow-hidden mb-12 shadow-xl">
             <img
-              src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1200&h=800&fit=crop"
+              src="/photos/IMG_1032.JPG"
               alt={
                 language === "ko"
-                  ? "건강한 과일과 영양소가 가득한 이미지"
-                  : "Healthy fruits and nutrients"
+                  ? "신선한 유기농 대추 수확"
+                  : "Fresh organic jujube harvest"
               }
               className="w-full h-full object-cover"
             />
@@ -86,8 +86,8 @@ export default function HealthBenefitsJujubePage() {
 
                 <div className="my-8 rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=1200&h=800&fit=crop"
-                    alt="신선한 유기농 과일"
+                    src="/photos/IMG_9855.JPG"
+                    alt="신선한 유기농 대추 나무"
                     className="w-full h-auto"
                   />
                 </div>

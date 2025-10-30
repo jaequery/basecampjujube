@@ -123,21 +123,272 @@ export default function Home() {
           galleryAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">{t.galleryTitle}</h2>
             <p className="text-lg text-muted-foreground">{t.gallerySubtitle}</p>
           </div>
-          <div className="flex justify-center">
+
+          {/* Mosaic Grid Gallery */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {/* Row 1 - New Photos */}
+            <div className="col-span-1 row-span-2">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 h-full">
+                <img
+                  src="/photos/IMG_1080.JPG"
+                  alt="Fresh jujubes drying on traditional racks"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/photos/IMG_0169.jpg"
+                  alt="Jujube orchard landscape"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 row-span-1">
+              <div className="aspect-video overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 h-full">
+                <img
+                  src="/photos/IMG_2124.JPG"
+                  alt="Wide view of jujube farm"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/photos/IMG_1032.JPG"
+                  alt="Jujube harvest process"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/photos/IMG_9855.JPG"
+                  alt="Organic jujube farming"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/photos/IMG_1718.JPG"
+                  alt="Jujube trees in orchard"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            <div className="col-span-1 md:col-span-2">
+              <div className="aspect-video overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/photos/IMG_2129.JPG"
+                  alt="Jujube farm panorama"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/gallery/family-picking-jujubes.webp"
+                  alt="Family picking jujubes"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/gallery/drying-tunnel-jujubes.webp"
+                  alt="Jujubes drying in greenhouse tunnel"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Row 4 */}
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/gallery/walking-through-orchard.webp"
+                  alt="Walking through jujube orchard"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/gallery/picking-from-tree.webp"
+                  alt="Picking fresh jujubes"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/jujube-trees-in-orchard.jpg"
+                  alt="Jujube orchard"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/fresh-red-jujubes-on-tree.jpg"
+                  alt="Fresh red jujubes"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Row 5 */}
+            <div className="col-span-2 md:col-span-3">
+              <div className="aspect-[21/9] overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/jujube-farm-landscape-california.jpg"
+                  alt="California jujube farm landscape"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/organic-jujube-harvest.jpg"
+                  alt="Organic harvest"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Row 6 */}
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/jujube-fruit-close-up.jpg"
+                  alt="Jujube close-up"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img
+                  src="/family-farm-jujube-ranch.jpg"
+                  alt="Family at the ranch"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+            <div className="col-span-2 md:col-span-2 row-span-1">
+              <div className="aspect-video overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 h-full">
+                <img
+                  src="/gallery/sharing-harvest.webp"
+                  alt="Sharing the harvest"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Original Carousel for mobile swipe experience */}
+          <div className="mt-12 md:hidden">
             <Carousel
               opts={{
                 align: "start",
                 loop: true,
               }}
-              className="w-full max-w-5xl"
+              className="w-full"
             >
               <CarouselContent>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_1080.JPG"
+                      alt="Fresh jujubes drying on traditional racks"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_0169.jpg"
+                      alt="Jujube orchard landscape"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_2124.JPG"
+                      alt="Wide view of jujube farm"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_1032.JPG"
+                      alt="Jujube harvest process"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_9855.JPG"
+                      alt="Organic jujube farming"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_1718.JPG"
+                      alt="Jujube trees in orchard"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/photos/IMG_2129.JPG"
+                      alt="Jujube farm panorama"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/gallery/family-picking-jujubes.webp"
+                      alt="Family picking jujubes"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="basis-3/4">
                   <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
                     <img
                       src="/jujube-tree-closeup.jpg"
