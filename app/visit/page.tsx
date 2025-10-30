@@ -98,7 +98,7 @@ export default function VisitPage() {
                 className="bg-[#DC143C] hover:bg-[#B8102E] text-white rounded-full px-8 py-6 text-lg font-semibold"
               >
                 <a
-                  href="https://cal.com/jujufarm/farm-visit?overlayCalendar=true"
+                  href="https://cal.com/basecampjujube/farm-visit?overlayCalendar=true"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
