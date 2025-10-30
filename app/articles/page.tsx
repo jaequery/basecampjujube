@@ -14,6 +14,18 @@ export default function ArticlesPage() {
 
   const articles = [
     {
+      slug: "health-benefits-of-jujube",
+      titleEn: "Health Benefits of Jujube: The Science-Backed Superfood",
+      titleKo: "대추의 건강 효능: 과학이 입증한 슈퍼푸드의 힘",
+      excerptEn:
+        "Discover the remarkable health benefits of jujube fruit backed by scientific research. Learn about improved sleep, heart health, immune support, brain function, and more from this ancient superfood.",
+      excerptKo:
+        "과학적 연구로 뒷받침된 대추의 놀라운 건강 효능을 발견하세요. 수면 개선, 심장 건강, 면역 지원, 뇌 기능 향상 등 고대 슈퍼푸드의 효능을 알아보세요.",
+      date: "2025-10-20",
+      readTime: 10,
+      image: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=800&h=600&fit=crop",
+    },
+    {
       slug: "jujube-farm-experience",
       titleEn: "The Jujube Farm Experience: Why You Should Visit at Least Once",
       titleKo: "대추 농장 체험: 왜 한 번은 꼭 방문해야 하는가",
@@ -100,7 +112,7 @@ export default function ArticlesPage() {
       <footer className="bg-white border-t-4 border-accent/20 py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Basecamp Jujube Ranch. {t.footerCopyright}
+            © {new Date().getFullYear()} Base Camp Jujube Ranch. {t.footerCopyright}
           </p>
         </div>
       </footer>

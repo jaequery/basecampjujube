@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "The Jujube Farm Experience: Why You Should Visit at Least Once | Basecamp Jujube Ranch",
+  title: "The Jujube Farm Experience: Why You Should Visit at Least Once | Base Camp Jujube Ranch",
   description:
     "Discover the magic of organic jujube farming in California's Lucerne Valley. Learn what makes a farm visit unforgettable, the health benefits of jujubes, and why this experience should be on your bucket list.",
   keywords: [
@@ -21,19 +21,19 @@ export const metadata: Metadata = {
     "organic fruit picking",
     "educational farm tour",
   ],
-  authors: [{ name: "Basecamp Jujube Ranch" }],
+  authors: [{ name: "Base Camp Jujube Ranch" }],
   openGraph: {
     title: "The Jujube Farm Experience: Why You Should Visit at Least Once",
     description:
       "Experience the peace and beauty of organic jujube farming in California. Hand-pick fresh jujubes, learn traditional farming methods, and create lasting family memories.",
     url: "https://jujufarm.com/articles/jujube-farm-experience",
-    siteName: "Basecamp Jujube Ranch",
+    siteName: "Base Camp Jujube Ranch",
     images: [
       {
         url: "https://jujufarm.com/gallery/walking-through-orchard.webp",
         width: 1200,
         height: 630,
-        alt: "Visitors walking through jujube orchard at Basecamp Jujube Ranch",
+        alt: "Visitors walking through jujube orchard at Base Camp Jujube Ranch",
       },
     ],
     locale: "en_US",
@@ -73,12 +73,12 @@ export const jsonLd = {
   dateModified: "2025-10-15",
   author: {
     "@type": "Organization",
-    name: "Basecamp Jujube Ranch",
+    name: "Base Camp Jujube Ranch",
     url: "https://jujufarm.com",
   },
   publisher: {
     "@type": "Organization",
-    name: "Basecamp Jujube Ranch",
+    name: "Base Camp Jujube Ranch",
     logo: {
       "@type": "ImageObject",
       url: "https://jujufarm.com/jujube-logo.png",

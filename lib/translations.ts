@@ -141,7 +141,7 @@ export const translations = {
     ourStoryTitle: "Our Story",
     ourStorySubtitle: "Family, tradition, and a love for jujubes",
     ourStoryIntro:
-      "Basecamp Jujube Ranch is a family-owned farm nestled in the heart of Lucerne Valley, California. We take pride in growing the finest organic Li jujubes with care and dedication.",
+      "Base Camp Jujube Ranch is a family-owned farm nestled in the heart of Lucerne Valley, California. We take pride in growing the finest organic Li jujubes with care and dedication.",
     ourStorySection1Title: "How We Started",
     ourStorySection1Text:
       "Our family has a rich tradition of jujube cultivation from Korea. After moving to California, we discovered that the desert's perfect climate was ideal for growing premium Li jujubes. In 2015, we began turning this dream into reality.",
@@ -209,7 +209,7 @@ export const translations = {
     wholesalePhone: "Phone: (213) 576-9133",
 
     // Hero Section
-    heroTitle: "Basecamp Jujube Ranch",
+    heroTitle: "Base Camp Jujube Ranch",
     heroSubtitle: "Family-grown with love",
     heroDescription: "Sweet, organic jujubes from our sunny California ranch",
     bookVisit: "Book a Visit",

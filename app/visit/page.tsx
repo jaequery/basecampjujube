@@ -196,7 +196,7 @@ export default function VisitPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Basecamp Jujube Ranch Location"
+              title="Base Camp Jujube Ranch Location"
             />
           </div>
         </div>
@@ -245,7 +245,7 @@ export default function VisitPage() {
             <div className="text-center md:text-left">
               <Image
                 src="/basecamp-logo.png"
-                alt="Basecamp Jujube Ranch"
+                alt="Base Camp Jujube Ranch"
                 width={150}
                 height={50}
                 className="h-12 w-auto mx-auto md:mx-0 mb-3"

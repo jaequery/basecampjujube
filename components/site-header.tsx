@@ -22,7 +22,7 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
             <Link href="/" className="block">
               <Image
                 src="/basecamp-logo.png"
-                alt="Basecamp Jujube Farm 대추농장"
+                alt="Base Camp Jujube Farm 대추농장"
                 width={120}
                 height={40}
                 className="h-10 w-auto"
@@ -62,12 +62,14 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
               <Link href="/" className="flex items-center">
                 <Image
                   src="/basecamp-logo.png"
-                  alt="Basecamp Jujube Farm 대추농장"
+                  alt="Base Camp Jujube Farm 대추농장"
                   width={120}
                   height={40}
                   className="h-10 w-auto"
                 />
-                대추농장 ❤️ Lucerne Valley
+                <span className="ml-4 flex items-center space-x-2 text-xl font-extrabold bg-gradient-to-r from-amber-800 to-lime-600 bg-clip-text text-transparent drop-shadow-md">
+                  <span className="tracking-tight">대추농장 | Base Camp</span>
+                </span>
               </Link>
             </div>
 

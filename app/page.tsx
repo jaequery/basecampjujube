@@ -30,7 +30,7 @@ export default function Home() {
         <div className="mb-8 animate-bounce-in">
           <img
             src="/jujube-logo.png"
-            alt="Basecamp Jujube Ranch Logo"
+            alt="Base Camp Jujube Ranch Logo"
             className="w-32 h-32 object-contain drop-shadow-lg"
           />
         </div>
@@ -281,24 +281,6 @@ export default function Home() {
                     />
                   </div>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <img
-                      src="/jujube-fruit-close-up.jpg"
-                      alt="Jujube close-up"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <img
-                      src="/family-farm-jujube-ranch.jpg"
-                      alt="Family at ranch"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </CarouselItem>
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
@@ -409,7 +391,7 @@ export default function Home() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Basecamp Jujube Ranch Location"
+          title="Base Camp Jujube Ranch Location"
         />
       </div>
 
@@ -419,7 +401,7 @@ export default function Home() {
             <div className="text-center mb-8">
               <img
                 src="/jujube-logo.png"
-                alt="Basecamp Jujube Ranch"
+                alt="Base Camp Jujube Ranch"
                 className="w-20 h-20 mx-auto mb-4 drop-shadow-md"
               />
               <div className="flex items-center justify-center gap-2 mb-2">
@@ -475,7 +457,7 @@ export default function Home() {
 
             <div className="text-center pt-6 border-t-2 border-border">
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Basecamp Jujube Ranch. {t.footerCopyright}{" "}
+                © {new Date().getFullYear()} Base Camp Jujube Ranch. {t.footerCopyright}{" "}
                 <Heart className="w-3 h-3 inline text-accent fill-accent" />
               </p>
             </div>

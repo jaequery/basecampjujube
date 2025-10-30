@@ -167,7 +167,7 @@ export default function WholesalePage() {
             <div className="text-center md:text-left">
               <Image
                 src="/basecamp-logo.png"
-                alt="Basecamp Jujube Ranch"
+                alt="Base Camp Jujube Ranch"
                 width={150}
                 height={50}
                 className="h-12 w-auto mx-auto md:mx-0 mb-3"

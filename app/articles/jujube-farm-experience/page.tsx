@@ -6,7 +6,7 @@ import { useLanguage } from "@/lib/use-language"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
 import { Calendar, Clock, ArrowLeft, MapPin, CheckCircle } from "lucide-react"
-import { metadata, jsonLd } from "./metadata"
+import { jsonLd } from "./metadata"
 
 export default function JujubeFarmExperiencePage() {
   const { language, setLanguage } = useLanguage()
@@ -452,7 +452,7 @@ export default function JujubeFarmExperiencePage() {
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   In our fast-paced modern lives, there are few experiences as therapeutic as spending a day in a quiet
-                  desert orchard, away from the noise and stress of city living. Basecamp Jujube Ranch, nestled in the
+                  desert orchard, away from the noise and stress of city living. Base Camp Jujube Ranch, nestled in the
                   heart of California's Lucerne Valley, offers the perfect escape to reconnect with nature and discover
                   what really matters.
                 </p>
@@ -577,7 +577,7 @@ export default function JujubeFarmExperiencePage() {
                   Understanding Traditional Farming Methods
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  At Basecamp Jujube Ranch, we use traditional farming methods passed down through generations in Korea.
+                  At Base Camp Jujube Ranch, we use traditional farming methods passed down through generations in Korea.
                   Our practices are chemical-free, instead relying on natural pest control, soil management, and
                   time-honored techniques that work with nature rather than against it.
                 </p>
@@ -826,7 +826,7 @@ export default function JujubeFarmExperiencePage() {
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed mb-12">
-                  So come visit us at Basecamp Jujube Ranch with your family and friends, and experience the magic for
+                  So come visit us at Base Camp Jujube Ranch with your family and friends, and experience the magic for
                   yourself. We promise you'll leave with not just the jujubes you picked, but also memories that last a
                   lifetime and a new perspective on food, farming, and family. We welcome you as family and look forward
                   to sharing what we love with you.
@@ -854,7 +854,7 @@ export default function JujubeFarmExperiencePage() {
       <footer className="bg-white border-t-4 border-accent/20 py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Basecamp Jujube Ranch. {t.footerCopyright}
+            © {new Date().getFullYear()} Base Camp Jujube Ranch. {t.footerCopyright}
           </p>
         </div>
       </footer>

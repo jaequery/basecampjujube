@@ -9,7 +9,7 @@ const translations = {
     message: "베이스캠프 대추 농장 웹사이트가 새롭게 오픈했습니다! 🎉",
   },
   en: {
-    message: "Basecamp Jujube Farm website just launched! 🎉",
+    message: "Base Camp Jujube Farm website just launched! 🎉",
   },
 }
 
