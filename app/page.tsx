@@ -289,8 +289,8 @@ export default function Home() {
             <div className="col-span-1">
               <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
                 <img
-                  src="/family-farm-jujube-ranch.jpg"
-                  alt="Family at the ranch"
+                  src="/photos/IMG_0654 (1).JPG"
+                  alt="Jujube farm facilities"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
