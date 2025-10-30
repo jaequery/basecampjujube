@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { LanguageSwitcher } from "@/components/language-switcher"
-import { translations, type Language } from "@/lib/translations"
+import Link from "next/link";
+import Image from "next/image";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { translations, type Language } from "@/lib/translations";
 
 interface SiteHeaderProps {
-  language: Language
-  setLanguage: (lang: Language) => void
+  language: Language;
+  setLanguage: (lang: Language) => void;
 }
 
 export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
-  const t = translations[language]
+  const t = translations[language];
 
   return (
     <>
@@ -22,17 +22,23 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
             <Link href="/" className="block">
               <Image
                 src="/basecamp-logo.png"
-                alt="Basecamp Jujube Farm"
+                alt="Basecamp Jujube Farm 대추농장"
                 width={120}
                 height={40}
                 className="h-10 w-auto"
               />
             </Link>
             <div className="flex items-center justify-center gap-6">
-              <Link href="/about" className="text-foreground font-medium hover:text-accent transition-colors text-base">
+              <Link
+                href="/about"
+                className="text-foreground font-medium hover:text-accent transition-colors text-base"
+              >
                 {t.navOurStory}
               </Link>
-              <Link href="/visit" className="text-foreground font-medium hover:text-accent transition-colors text-base">
+              <Link
+                href="/visit"
+                className="text-foreground font-medium hover:text-accent transition-colors text-base"
+              >
                 {t.navVisit}
               </Link>
               <Link
@@ -41,7 +47,10 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
               >
                 {t.navBuyWholesale}
               </Link>
-              <Link href="/articles" className="text-foreground font-medium hover:text-accent transition-colors text-base">
+              <Link
+                href="/articles"
+                className="text-foreground font-medium hover:text-accent transition-colors text-base"
+              >
                 {t.navArticles}
               </Link>
             </div>
@@ -50,22 +59,29 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
           {/* Desktop: Original layout with absolute positioning */}
           <div className="hidden md:block relative">
             <div className="absolute left-0 top-0">
-              <Link href="/" className="block">
+              <Link href="/" className="flex items-center">
                 <Image
                   src="/basecamp-logo.png"
-                  alt="Basecamp Jujube Farm"
+                  alt="Basecamp Jujube Farm 대추농장"
                   width={120}
                   height={40}
                   className="h-10 w-auto"
                 />
+                대추농장 ❤️ Lucerne Valley
               </Link>
             </div>
 
             <div className="flex items-center justify-center gap-8">
-              <Link href="/about" className="text-foreground font-medium hover:text-accent transition-colors text-lg">
+              <Link
+                href="/about"
+                className="text-foreground font-medium hover:text-accent transition-colors text-lg"
+              >
                 {t.navOurStory}
               </Link>
-              <Link href="/visit" className="text-foreground font-medium hover:text-accent transition-colors text-lg">
+              <Link
+                href="/visit"
+                className="text-foreground font-medium hover:text-accent transition-colors text-lg"
+              >
                 {t.navVisit}
               </Link>
               <Link
@@ -74,21 +90,30 @@ export function SiteHeader({ language, setLanguage }: SiteHeaderProps) {
               >
                 {t.navBuyWholesale}
               </Link>
-              <Link href="/articles" className="text-foreground font-medium hover:text-accent transition-colors text-lg">
+              <Link
+                href="/articles"
+                className="text-foreground font-medium hover:text-accent transition-colors text-lg"
+              >
                 {t.navArticles}
               </Link>
             </div>
 
             <div className="absolute right-0 top-0">
-              <LanguageSwitcher currentLanguage={language} onLanguageChange={setLanguage} />
+              <LanguageSwitcher
+                currentLanguage={language}
+                onLanguageChange={setLanguage}
+              />
             </div>
           </div>
         </div>
       </header>
 
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
-        <LanguageSwitcher currentLanguage={language} onLanguageChange={setLanguage} />
+        <LanguageSwitcher
+          currentLanguage={language}
+          onLanguageChange={setLanguage}
+        />
       </div>
     </>
-  )
+  );
 }

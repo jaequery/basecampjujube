@@ -11,7 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Basecamp Jujube Ranch | Organic Jujubes in Lucerne Valley, California",
+  title: "대추농장 | Basecamp Jujube Ranch | Organic Jujubes in Lucerne Valley, California",
   description:
     "Premium organic jujubes from Basecamp Jujube Ranch in Lucerne Valley, California. Visit our ranch for a unique farm experience.",
   generator: "v0.app",
