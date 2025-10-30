@@ -48,8 +48,8 @@ export default function WholesalePage() {
           <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] overflow-hidden hover:border-[#DC143C] transition-colors">
             <div className="relative h-[300px]">
               <Image
-                src="/fresh-li-jujube-fruits-on-tree-branch.jpg"
-                alt="Fresh jujubes"
+                src="/fresh-drying-process.jpg"
+                alt="Fresh jujubes with leaves on drying racks"
                 fill
                 className="object-cover"
               />
@@ -63,7 +63,12 @@ export default function WholesalePage() {
 
           <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] overflow-hidden hover:border-[#DC143C] transition-colors">
             <div className="relative h-[300px]">
-              <Image src="/dried-jujube-dates-in-wooden-bowl.jpg" alt="Dried jujubes" fill className="object-cover" />
+              <Image
+                src="/farm-drying-racks.jpg"
+                alt="Traditional sun-drying on wooden racks"
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-[#8B4513] mb-3">{t.wholesaleDriedTitle}</h3>

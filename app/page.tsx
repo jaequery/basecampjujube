@@ -140,6 +140,78 @@ export default function Home() {
                 <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                   <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
                     <img
+                      src="/jujube-tree-closeup.jpg"
+                      alt="Ripe jujubes hanging on tree branches"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/orchard-pathway.jpg"
+                      alt="Scenic pathway through jujube orchard"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/harvesting-jujubes.jpg"
+                      alt="Harvesting jujubes with traditional methods"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/farm-drying-racks.jpg"
+                      alt="Outdoor drying racks with fresh jujubes"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/fresh-drying-process.jpg"
+                      alt="Fresh jujubes in early drying stage"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/greenhouse-drying.jpg"
+                      alt="Inside greenhouse with drying jujubes"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/hands-on-drying.jpg"
+                      alt="Hands-on farm experience"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      src="/orchard-rows.jpg"
+                      alt="Beautiful rows of jujube trees"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img
                       src="/gallery/family-picking-jujubes.webp"
                       alt="Family picking jujubes from trees"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
@@ -169,15 +241,6 @@ export default function Home() {
                     <img
                       src="/gallery/picking-from-tree.webp"
                       alt="Picking fresh jujubes from tree"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                  <div className="aspect-square overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <img
-                      src="/gallery/sharing-harvest.webp"
-                      alt="Sharing the jujube harvest"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>

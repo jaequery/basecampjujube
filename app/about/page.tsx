@@ -39,8 +39,8 @@ export default function AboutPage() {
         >
           <div className="relative h-[400px] rounded-3xl overflow-hidden">
             <Image
-              src="/korean-family-working-in-jujube-orchard-with-deser.jpg"
-              alt="Family working in orchard"
+              src="/orchard-pathway.jpg"
+              alt="Scenic pathway through jujube orchard during harvest"
               fill
               className="object-cover"
             />
@@ -63,8 +63,8 @@ export default function AboutPage() {
           </div>
           <div className="relative h-[400px] rounded-3xl overflow-hidden order-1 md:order-2">
             <Image
-              src="/lush-jujube-orchard-with-ripe-red-fruits-on-trees-.jpg"
-              alt="Jujube orchard"
+              src="/harvesting-jujubes.jpg"
+              alt="Traditional jujube harvesting with blue tarp"
               fill
               className="object-cover"
             />
@@ -79,8 +79,8 @@ export default function AboutPage() {
         >
           <div className="relative h-[400px] rounded-3xl overflow-hidden">
             <Image
-              src="/jujube-orchard-with-desert-mountains-and-clear-blu.jpg"
-              alt="Desert orchard"
+              src="/jujube-tree-closeup.jpg"
+              alt="Ripe jujubes hanging on tree branches"
               fill
               className="object-cover"
             />

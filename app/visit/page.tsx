@@ -36,8 +36,8 @@ export default function VisitPage() {
 
         <div className="relative h-[500px] rounded-3xl overflow-hidden mb-16">
           <Image
-            src="/gallery/family-picking-jujubes.webp"
-            alt="Family picking jujubes"
+            src="/farm-recreation-area.jpg"
+            alt="Relaxing outdoor recreation area at the farm"
             fill
             className="object-cover"
           />
@@ -111,6 +111,70 @@ export default function VisitPage() {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-[#8B4513] mb-4 text-center">{t.visitMapTitle}</h2>
+          <p className="text-xl text-[#D2691E] mb-8 text-center">{t.visitMapSubtitle}</p>
+
+          <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 mb-8">
+            <h3 className="text-2xl font-bold text-[#8B4513] mb-6">{t.visitDirectionsTitle}</h3>
+
+            <div className="space-y-6">
+              <div>
+                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">{t.visitDirectionsFrom}</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#DC143C] mt-1">🚗</span>
+                    <span>{t.visitDirectionsLA}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#DC143C] mt-1">🚗</span>
+                    <span>{t.visitDirectionsSanDiego}</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#DC143C] mt-1">🚗</span>
+                    <span>{t.visitDirectionsRiverside}</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">{t.visitDirectionsInstructions}</h4>
+                <ol className="space-y-2 text-gray-700 list-decimal list-inside">
+                  <li>{t.visitDirectionsStep1}</li>
+                  <li>{t.visitDirectionsStep2}</li>
+                  <li>{t.visitDirectionsStep3}</li>
+                  <li>{t.visitDirectionsStep4}</li>
+                </ol>
+              </div>
+
+              <div className="bg-[#FFF8F0] rounded-2xl p-4 border border-[#FFE4D6]">
+                <p className="text-gray-700 mb-2">
+                  <span className="font-semibold text-[#8B4513]">🅿️</span> {t.visitDirectionsParking}
+                </p>
+                <p className="text-sm text-gray-600">
+                  <span className="font-semibold text-[#DC143C]">⚠️</span> {t.visitDirectionsNote}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden border-4 border-[#FFE4D6] shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.234567890123!2d-116.9678!3d34.4456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDI2JzQ0LjIiTiAxMTbCsDU4JzA0LjEiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Basecamp Jujube Ranch Location"
+            />
+          </div>
+        </div>
+      </section>
+
       <section
         ref={galleryAnimation.ref}
         className={`container mx-auto px-4 py-16 transition-all duration-1000 ${
@@ -120,17 +184,17 @@ export default function VisitPage() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
             <Image
-              src="/gallery/walking-through-orchard.webp"
-              alt="Walking through orchard"
+              src="/farm-dining-experience.jpg"
+              alt="Enjoying Korean food at the farm"
               fill
               className="object-cover"
             />
           </div>
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
-            <Image src="/gallery/picking-from-tree.webp" alt="Picking from tree" fill className="object-cover" />
+            <Image src="/orchard-rows.jpg" alt="Beautiful orchard rows with ripe fruit" fill className="object-cover" />
           </div>
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
-            <Image src="/gallery/sharing-harvest.webp" alt="Sharing harvest" fill className="object-cover" />
+            <Image src="/jujube-tree-closeup.jpg" alt="Close-up of jujubes on tree" fill className="object-cover" />
           </div>
         </div>
       </section>

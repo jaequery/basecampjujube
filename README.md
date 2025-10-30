@@ -1,51 +1,30 @@
-# 🌿 Basecamp Jujube Ranch
+# Jujube farm website
 
-**Organic Jujube Farm in Lucerne Valley, California**
+*Automatically synced with your [v0.app](https://v0.app) deployments*
 
-Welcome to **[BasecampJujube.com](https://basecampjujube.com)** — a **family-owned organic jujube farm** located in the heart of **Lucerne Valley, CA**.  
-We specialize in growing premium, pesticide-free **jujubes (대추)** using sustainable farming methods passed down through generations.
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/jae-lees-projects-2d0e23d2/v0-basecampjujube-com)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/SSoFfAe1vo6)
 
-## 🍎 About Us
+## Overview
 
-Basecamp Jujube Ranch is a **small family farm** dedicated to producing the finest quality **organic jujube fruits** — sweet, crisp, and rich in antioxidants.  
-Our jujubes are grown naturally under the high-desert sun of Southern California, without synthetic fertilizers or chemicals.
+This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
+Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
 
-## 🌱 What Makes Us Different
+## Deployment
 
-- 100% **Certified Organic Practices**  
-- **Hand-harvested** for peak freshness  
-- Naturally **sun-dried jujubes** available seasonally  
-- **Sustainable water use** and soil regeneration focus  
-- **Family-operated** with love and care
+Your project is live at:
 
-## 📍 Visit Us
+**[https://vercel.com/jae-lees-projects-2d0e23d2/v0-basecampjujube-com](https://vercel.com/jae-lees-projects-2d0e23d2/v0-basecampjujube-com)**
 
-We welcome visitors during harvest season!  
-Come experience **jujube picking**, taste our fruits, and learn how we grow them sustainably.
+## Build your app
 
-📌 **Location:** Lucerne Valley, California  
-🌐 **Website:** [https://basecampjujube.com](https://basecampjujube.com)  
-📧 **Email:** info@basecampjujube.com  
-📞 **Phone:** (optional if you want to include)
+Continue building your app on:
 
-## 🧺 Products
+**[https://v0.app/chat/projects/SSoFfAe1vo6](https://v0.app/chat/projects/SSoFfAe1vo6)**
 
-- Fresh organic jujubes (in season)  
-- Sun-dried jujubes  
-- Jujube seedlings and trees  
-- Wholesale and bulk orders available  
+## How It Works
 
-## 💬 Connect With Us
-
-Follow our journey on social media and see life on the ranch:  
-- Instagram: [@basecampjujube](https://instagram.com/basecampjujube)  
-- Facebook: [Basecamp Jujube Ranch](https://facebook.com/basecampjujube)  
-
----
-
-### 🔍 SEO Keywords
-`jujube farm lucerne valley`, `organic jujube california`, `family owned jujube ranch`, `jujube u-pick southern california`, `fresh jujube fruit`, `jujube trees for sale`, `대추 농장`
-
----
-
-© 2025 Basecamp Jujube Ranch — Family-owned organic jujube farm in Lucerne Valley, California.
+1. Create and modify your project using [v0.app](https://v0.app)
+2. Deploy your chats from the v0 interface
+3. Changes are automatically pushed to this repository
+4. Vercel deploys the latest version from this repository
