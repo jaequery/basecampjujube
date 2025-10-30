@@ -8,6 +8,7 @@ import { useLanguage } from "@/lib/use-language"
 import { SiteHeader } from "@/components/site-header"
 import { translations } from "@/lib/translations"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { LaunchBanner } from "@/components/launch-banner"
 
 export default function Home() {
   const { language, setLanguage } = useLanguage()
@@ -21,7 +22,11 @@ export default function Home() {
     <div className="min-h-screen bg-background flex flex-col">
       <SiteHeader language={language} setLanguage={setLanguage} />
 
-      <div className="flex-1 flex flex-col items-center justify-center px-6 py-20 mt-20">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 py-8 mt-4">
+        <div className="w-full max-w-4xl mb-8">
+          <LaunchBanner />
+        </div>
+
         <div className="mb-8 animate-bounce-in">
           <img
             src="/jujube-logo.png"
