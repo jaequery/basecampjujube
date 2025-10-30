@@ -150,7 +150,7 @@ export default function WholesalePage() {
               {t.wholesaleEmail}
             </a>
             <a
-              href="tel:+17602487789"
+              href="tel:+12135769133"
               className="flex items-center justify-center gap-3 text-lg text-[#8B4513] hover:text-[#DC143C] transition-colors"
             >
               <Phone className="w-6 h-6" />

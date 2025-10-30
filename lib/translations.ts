@@ -76,7 +76,7 @@ export const translations = {
     wholesaleContactTitle: "도매 문의",
     wholesaleContactText: "도매 가격 및 주문에 대해 문의하려면 연락주세요:",
     wholesaleEmail: "이메일: basecampjujubecom@gmail.com",
-    wholesalePhone: "전화: (760) 248-7789",
+    wholesalePhone: "전화: (213) 576-9133",
 
     // Hero Section
     heroTitle: "베이스캠프 대추 농장",
@@ -180,7 +180,7 @@ export const translations = {
     visitDirectionsStep3: "Continue straight for about 30 miles into Lucerne Valley",
     visitDirectionsStep4: "Turn right onto Planetary Ave - the ranch is on your left",
     visitDirectionsParking: "Parking: Free parking available on-site",
-    visitDirectionsNote: "Note: GPS may not be accurate. If you get lost, call us: (760) 248-7789",
+    visitDirectionsNote: "Note: GPS may not be accurate. If you get lost, call us: (213) 576-9133",
 
     // Buy Wholesale Page
     wholesaleTitle: "Buy Wholesale",
@@ -204,7 +204,7 @@ export const translations = {
     wholesaleContactTitle: "Contact for Wholesale",
     wholesaleContactText: "Get in touch to discuss wholesale pricing and orders:",
     wholesaleEmail: "Email: basecampjujubecom@gmail.com",
-    wholesalePhone: "Phone: (760) 248-7789",
+    wholesalePhone: "Phone: (213) 576-9133",
 
     // Hero Section
     heroTitle: "Basecamp Jujube Ranch",
