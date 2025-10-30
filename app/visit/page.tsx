@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useLanguage } from "@/lib/use-language"
-import Image from "next/image"
-import { Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { SiteHeader } from "@/components/site-header"
-import { translations } from "@/lib/translations"
-import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { useLanguage } from "@/lib/use-language";
+import Image from "next/image";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { SiteHeader } from "@/components/site-header";
+import { translations } from "@/lib/translations";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function VisitPage() {
-  const { language, setLanguage } = useLanguage()
-  const t = translations[language]
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language];
 
-  const experienceAnimation = useScrollAnimation()
-  const detailsAnimation = useScrollAnimation()
-  const galleryAnimation = useScrollAnimation()
+  const experienceAnimation = useScrollAnimation();
+  const detailsAnimation = useScrollAnimation();
+  const galleryAnimation = useScrollAnimation();
 
   const experiences = [
     t.visitExperience1,
@@ -23,7 +23,7 @@ export default function VisitPage() {
     t.visitExperience4,
     t.visitExperience5,
     t.visitExperience6,
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FFF8F0] to-white">
@@ -31,15 +31,18 @@ export default function VisitPage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#8B4513] mb-4">{t.visitPageTitle}</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-[#8B4513] mb-4">
+          {t.visitPageTitle}
+        </h1>
         <p className="text-xl text-[#D2691E] mb-12">{t.visitPageSubtitle}</p>
 
         <div className="relative h-[500px] rounded-3xl overflow-hidden mb-16">
           <Image
             src="/farm-recreation-area.jpg"
+            className="mx-auto rounded-full"
             alt="Relaxing outdoor recreation area at the farm"
-            fill
-            className="object-cover"
+            width="500"
+            height={400}
           />
         </div>
       </section>
@@ -47,12 +50,16 @@ export default function VisitPage() {
       {/* Experience Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.visitExperienceTitle}</h2>
+          <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">
+            {t.visitExperienceTitle}
+          </h2>
 
           <div
             ref={experienceAnimation.ref}
             className={`grid md:grid-cols-2 gap-6 mb-16 transition-all duration-1000 ${
-              experienceAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              experienceAnimation.isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             {experiences.map((experience, index) => (
@@ -71,23 +78,31 @@ export default function VisitPage() {
           <div
             ref={detailsAnimation.ref}
             className={`bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 md:p-12 transition-all duration-1000 ${
-              detailsAnimation.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+              detailsAnimation.isVisible
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-95"
             }`}
           >
-            <h3 className="text-3xl font-bold text-[#8B4513] mb-8 text-center">{t.visitDetailsTitle}</h3>
+            <h3 className="text-3xl font-bold text-[#8B4513] mb-8 text-center">
+              {t.visitDetailsTitle}
+            </h3>
 
             <div className="space-y-4 mb-8">
               <p className="text-lg text-gray-700">
-                <span className="font-semibold text-[#8B4513]">📅</span> {t.visitSeason}
+                <span className="font-semibold text-[#8B4513]">📅</span>{" "}
+                {t.visitSeason}
               </p>
               <p className="text-lg text-gray-700">
-                <span className="font-semibold text-[#8B4513]">⏰</span> {t.visitDuration}
+                <span className="font-semibold text-[#8B4513]">⏰</span>{" "}
+                {t.visitDuration}
               </p>
               <p className="text-lg text-gray-700">
-                <span className="font-semibold text-[#8B4513]">💰</span> {t.visitPrice}
+                <span className="font-semibold text-[#8B4513]">💰</span>{" "}
+                {t.visitPrice}
               </p>
               <p className="text-lg text-gray-700">
-                <span className="font-semibold text-[#8B4513]">✨</span> {t.visitIncluded}
+                <span className="font-semibold text-[#8B4513]">✨</span>{" "}
+                {t.visitIncluded}
               </p>
             </div>
 
@@ -114,15 +129,23 @@ export default function VisitPage() {
       {/* Map Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#8B4513] mb-4 text-center">{t.visitMapTitle}</h2>
-          <p className="text-xl text-[#D2691E] mb-8 text-center">{t.visitMapSubtitle}</p>
+          <h2 className="text-4xl font-bold text-[#8B4513] mb-4 text-center">
+            {t.visitMapTitle}
+          </h2>
+          <p className="text-xl text-[#D2691E] mb-8 text-center">
+            {t.visitMapSubtitle}
+          </p>
 
           <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 mb-8">
-            <h3 className="text-2xl font-bold text-[#8B4513] mb-6">{t.visitDirectionsTitle}</h3>
+            <h3 className="text-2xl font-bold text-[#8B4513] mb-6">
+              {t.visitDirectionsTitle}
+            </h3>
 
             <div className="space-y-6">
               <div>
-                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">{t.visitDirectionsFrom}</h4>
+                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">
+                  {t.visitDirectionsFrom}
+                </h4>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start gap-2">
                     <span className="text-[#DC143C] mt-1">🚗</span>
@@ -140,7 +163,9 @@ export default function VisitPage() {
               </div>
 
               <div>
-                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">{t.visitDirectionsInstructions}</h4>
+                <h4 className="font-semibold text-[#8B4513] mb-3 text-lg">
+                  {t.visitDirectionsInstructions}
+                </h4>
                 <ol className="space-y-2 text-gray-700 list-decimal list-inside">
                   <li>{t.visitDirectionsStep1}</li>
                   <li>{t.visitDirectionsStep2}</li>
@@ -151,10 +176,12 @@ export default function VisitPage() {
 
               <div className="bg-[#FFF8F0] rounded-2xl p-4 border border-[#FFE4D6]">
                 <p className="text-gray-700 mb-2">
-                  <span className="font-semibold text-[#8B4513]">🅿️</span> {t.visitDirectionsParking}
+                  <span className="font-semibold text-[#8B4513]">🅿️</span>{" "}
+                  {t.visitDirectionsParking}
                 </p>
                 <p className="text-sm text-gray-600">
-                  <span className="font-semibold text-[#DC143C]">⚠️</span> {t.visitDirectionsNote}
+                  <span className="font-semibold text-[#DC143C]">⚠️</span>{" "}
+                  {t.visitDirectionsNote}
                 </p>
               </div>
             </div>
@@ -178,7 +205,9 @@ export default function VisitPage() {
       <section
         ref={galleryAnimation.ref}
         className={`container mx-auto px-4 py-16 transition-all duration-1000 ${
-          galleryAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          galleryAnimation.isVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10"
         }`}
       >
         <div className="grid md:grid-cols-3 gap-6">
@@ -191,10 +220,20 @@ export default function VisitPage() {
             />
           </div>
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
-            <Image src="/orchard-rows.jpg" alt="Beautiful orchard rows with ripe fruit" fill className="object-cover" />
+            <Image
+              src="/orchard-rows.jpg"
+              alt="Beautiful orchard rows with ripe fruit"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="relative h-[300px] rounded-2xl overflow-hidden">
-            <Image src="/jujube-tree-closeup.jpg" alt="Close-up of jujubes on tree" fill className="object-cover" />
+            <Image
+              src="/jujube-tree-closeup.jpg"
+              alt="Close-up of jujubes on tree"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -222,5 +261,5 @@ export default function VisitPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
