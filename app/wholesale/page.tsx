@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { useLanguage } from "@/lib/use-language"
-import Image from "next/image"
-import { Check, Mail, Phone } from "lucide-react"
-import { SiteHeader } from "@/components/site-header"
-import { translations } from "@/lib/translations"
-import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { useLanguage } from "@/lib/use-language";
+import Image from "next/image";
+import { Check, Mail, Phone } from "lucide-react";
+import { SiteHeader } from "@/components/site-header";
+import { translations } from "@/lib/translations";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function WholesalePage() {
-  const { language, setLanguage } = useLanguage()
-  const t = translations[language]
+  const { language, setLanguage } = useLanguage();
+  const t = translations[language];
 
-  const productsAnimation = useScrollAnimation()
-  const benefitsAnimation = useScrollAnimation()
-  const contactAnimation = useScrollAnimation()
+  const productsAnimation = useScrollAnimation();
+  const benefitsAnimation = useScrollAnimation();
+  const contactAnimation = useScrollAnimation();
 
   const benefits = [
     t.wholesaleBenefit1,
@@ -22,7 +22,7 @@ export default function WholesalePage() {
     t.wholesaleBenefit4,
     t.wholesaleBenefit5,
     t.wholesaleBenefit6,
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FFF8F0] to-white">
@@ -30,19 +30,27 @@ export default function WholesalePage() {
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#8B4513] mb-4">{t.wholesaleTitle}</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-[#8B4513] mb-4">
+          {t.wholesaleTitle}
+        </h1>
         <p className="text-xl text-[#D2691E] mb-8">{t.wholesaleSubtitle}</p>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">{t.wholesaleIntro}</p>
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          {t.wholesaleIntro}
+        </p>
       </section>
 
       {/* Products Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.wholesaleProductsTitle}</h2>
+        <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">
+          {t.wholesaleProductsTitle}
+        </h2>
 
         <div
           ref={productsAnimation.ref}
           className={`grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20 transition-all duration-1000 ${
-            productsAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            productsAnimation.isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
           }`}
         >
           <div className="bg-white rounded-3xl border-2 border-[#FFE4D6] overflow-hidden hover:border-[#DC143C] transition-colors">
@@ -55,9 +63,15 @@ export default function WholesalePage() {
               />
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-[#8B4513] mb-3">{t.wholesaleFreshTitle}</h3>
-              <p className="text-gray-700 mb-4 leading-relaxed">{t.wholesaleFreshDesc}</p>
-              <p className="text-[#DC143C] font-semibold">{t.wholesaleFreshPrice}</p>
+              <h3 className="text-2xl font-bold text-[#8B4513] mb-3">
+                {t.wholesaleFreshTitle}
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                {t.wholesaleFreshDesc}
+              </p>
+              <p className="text-[#DC143C] font-semibold">
+                {t.wholesaleFreshPrice}
+              </p>
             </div>
           </div>
 
@@ -71,25 +85,38 @@ export default function WholesalePage() {
               />
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-[#8B4513] mb-3">{t.wholesaleDriedTitle}</h3>
-              <p className="text-gray-700 mb-4 leading-relaxed">{t.wholesaleDriedDesc}</p>
-              <p className="text-[#DC143C] font-semibold">{t.wholesaleDriedPrice}</p>
+              <h3 className="text-2xl font-bold text-[#8B4513] mb-3">
+                {t.wholesaleDriedTitle}
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                {t.wholesaleDriedDesc}
+              </p>
+              <p className="text-[#DC143C] font-semibold">
+                {t.wholesaleDriedPrice}
+              </p>
             </div>
           </div>
         </div>
 
         {/* Benefits */}
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">{t.wholesaleBenefitsTitle}</h2>
+          <h2 className="text-4xl font-bold text-[#8B4513] mb-12 text-center">
+            {t.wholesaleBenefitsTitle}
+          </h2>
 
           <div
             ref={benefitsAnimation.ref}
             className={`grid md:grid-cols-2 gap-6 mb-16 transition-all duration-1000 ${
-              benefitsAnimation.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              benefitsAnimation.isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-4 bg-white p-6 rounded-2xl border-2 border-[#FFE4D6]">
+              <div
+                key={index}
+                className="flex items-start gap-4 bg-white p-6 rounded-2xl border-2 border-[#FFE4D6]"
+              >
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#DC143C] flex items-center justify-center">
                   <Check className="w-5 h-5 text-white" />
                 </div>
@@ -103,16 +130,20 @@ export default function WholesalePage() {
       <section
         ref={contactAnimation.ref}
         className={`container mx-auto px-4 py-16 transition-all duration-1000 ${
-          contactAnimation.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          contactAnimation.isVisible
+            ? "opacity-100 scale-100"
+            : "opacity-0 scale-95"
         }`}
       >
         <div className="max-w-3xl mx-auto bg-white rounded-3xl border-2 border-[#FFE4D6] p-8 md:p-12 text-center">
-          <h2 className="text-3xl font-bold text-[#8B4513] mb-6">{t.wholesaleContactTitle}</h2>
+          <h2 className="text-3xl font-bold text-[#8B4513] mb-6">
+            {t.wholesaleContactTitle}
+          </h2>
           <p className="text-lg text-gray-700 mb-8">{t.wholesaleContactText}</p>
 
           <div className="space-y-4">
             <a
-              href="mailto:wholesale@basecampjujube.com"
+              href="mailto:basecampjujubecom@gmail.com"
               className="flex items-center justify-center gap-3 text-lg text-[#8B4513] hover:text-[#DC143C] transition-colors"
             >
               <Mail className="w-6 h-6" />
@@ -152,5 +183,5 @@ export default function WholesalePage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

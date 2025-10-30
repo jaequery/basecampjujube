@@ -75,7 +75,7 @@ export const translations = {
     wholesaleBenefit6: "전담 계정 지원",
     wholesaleContactTitle: "도매 문의",
     wholesaleContactText: "도매 가격 및 주문에 대해 문의하려면 연락주세요:",
-    wholesaleEmail: "이메일: wholesale@basecampjujube.com",
+    wholesaleEmail: "이메일: basecampjujubecom@gmail.com",
     wholesalePhone: "전화: (760) 248-7789",
 
     // Hero Section
@@ -203,7 +203,7 @@ export const translations = {
     wholesaleBenefit6: "Dedicated account support",
     wholesaleContactTitle: "Contact for Wholesale",
     wholesaleContactText: "Get in touch to discuss wholesale pricing and orders:",
-    wholesaleEmail: "Email: wholesale@basecampjujube.com",
+    wholesaleEmail: "Email: basecampjujubecom@gmail.com",
     wholesalePhone: "Phone: (760) 248-7789",
 
     // Hero Section
